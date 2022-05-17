@@ -27,5 +27,9 @@ cdef class PyEKM:
         return np.array(self.c_EKM.cal_num_dist)
 
     @property
+    def dist_num_arr(self):
+        return np.array(self.c_EKM.dist_num_arr)
+
+    @property
     def time_arr(self):
         return np.array(self.c_EKM.time_arr)

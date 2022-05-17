@@ -28,11 +28,10 @@ cal_num_dist = mod.cal_num_dist
 
 print(n_iter)
 print(cal_num_dist)
+print(np.sum(mod.dist_num_arr[0]))
 print(times)
 
 # KMeans
-# t_start = time.time()
-# mod = KMeans(n_clusters=c_true, init=Cens[0]).fit(X)
-# t_end = time.time()
-# n_iter = mod.n_iter_
-# print(t_end - t_start)
+mod = KMeans(n_clusters=c_true, init=Cens[0]).fit(X)
+n_iter = mod.n_iter_
+print(n_iter)

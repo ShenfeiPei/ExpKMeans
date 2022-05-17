@@ -14,6 +14,7 @@ cdef extern from "EKM.h":
         vector[int] n_iter_
         vector[double] time_arr
         vector[int] cal_num_dist
+        vector[vector[int]] dist_num_arr
 
         EKM() except +
         EKM(vector[vector[double]] &X, int c_true, bool debug) except +
